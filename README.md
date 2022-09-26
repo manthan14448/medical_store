@@ -1,0 +1,2 @@
+# medicalstore
+Odoo project repo
