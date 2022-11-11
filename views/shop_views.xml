@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="shop_templet" name="template_name">
+        <t t-call="website.layout">
+            <center>
+                <link rel='stylesheet' href='/medical_store/static/src/css/custom.css' />
+                <link rel="stylesheet" href="/medical_store/static/src/css/sc.css" />
+                <div class="col-md-6 col-sm-6 hidden-xs" id="skeleton_grid">
+                    <div id="abw">
+                        <div id="abb">
+                            <div id="abm" class="clear">
+                                <div id="abc" class="clear">
+                                    <div id="articlebody">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="383">
+                                            <tbody>
+                                                <tr>
+                                                    <td id="sc10" width="383">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="383">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td id="sc11">
+                                                                        <script type="text/javascript" src="/medical_store/static/src/js/selector2.js"></script>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="full_width">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table border="0" cellpadding="0" cellspacing="0" class="full_width">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td height="317" valign="top" width="178">
+                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="178">
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td width="24">&amp;nbsp;</td>
+                                                                                                                    <td align="right">
+                                                                                                                        <!--kelc-->
+                                                                                                                        <script type="text/javascript" src="/medical_store/static/src/js/kelc.js"></script>
+                                                                                                                        <!--kelc-->
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- <div class="col-md-3 col-sm-3 col-xs-12" id="skeleton_tags_grid"> -->
+            <div class="col-md-6 col-sm-6 hidden-xs" style="margin-left:170px;margin-top:-720px;" id="skeleton_tags_grid">
+                <h4>
+                    Products by Body Parts
+                    <span class="caret"></span>
+                </h4>
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" class="full_width">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                                <!--body-parts-->
+                                                <script type="text/javascript" src="/medical_store/static/src/js/body-parts.js"></script>
+                                                <!--body-parts-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+
+    </template>
+</odoo>

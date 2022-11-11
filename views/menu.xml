@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem id="medical_root_menu" name="Medical" web_icon="medical_store,static/description/icon.png" sequence="0" />
+        <menuitem id="Product_Catogory_menu" parent="medical_root_menu" name="Products" sequence="0" />
+        <menuitem id="Product_Details_menu" parent="medical_root_menu" name="Product Details" sequence="0" />
+</odoo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="product_public_body_part_form_view" model="ir.ui.view">
+    <field name="name">product.public.body.part.form</field>
+    <field name="model">product.public.body.part</field>
+    <field name="arch" type="xml">
+      <form string="Public Body Parts">
+        <sheet>
+          <div class="oe_left">
+            <group>
+              <field name="name"/>
+              <field name="sequence" readonly="1"/>
+            </group>
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="product_public_body_part_tree_view" model="ir.ui.view">
+    <field name="name">product.public.body.part.tree</field>
+    <field name="model">product.public.body.part</field>
+    <field name="arch" type="xml">
+      <tree string="Product Body Parts">
+        <field name="sequence" widget="handle"/>
+        <field name="name" />
+      </tree>
+    </field>
+  </record>
+  <record id="medical_root_menu_action" model="ir.actions.act_window">
+    <field name="name">Product Body Parts</field>
+    <field name="res_model">product.public.body.part</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="medicine_menu" action="medical_root_menu_action" parent="Product_Details_menu" name="Product" sequence="0" />
+
+</odoo>
