@@ -5,7 +5,7 @@
     'author': 'manthan',
     'summary': 'Medical Store Management App with advance Search',
     'description': """""",
-    'depends': ['mail', 'base', 'account', 'sale'],
+    'depends': ['mail', 'website', 'account', 'sale'],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
@@ -13,7 +13,7 @@
         'views/patient.xml',
         'views/shop_views.xml',
         'data/data.xml',
-       
+
     ],
     'demo': [],
     'sequence': -200,
