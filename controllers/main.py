@@ -50,4 +50,4 @@ class TempTest(http.Controller):
         #     'bodypart': bodypart,
         #     'view': view,
         # }
-        return request.website.render("WebsiteSale.products")
+        # return request.website.render("WebsiteSale.products")

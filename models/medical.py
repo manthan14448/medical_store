@@ -31,4 +31,4 @@ class HospitalDoctor(models.Model):
         ('fe_male', 'Female'),
     ], default='male', string="Gender")
     user_id = fields.Many2one('res.users', string='Related User')
-    
+ 

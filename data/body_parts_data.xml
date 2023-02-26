@@ -106,40 +106,5 @@
             <field name="name">Foot</field>
             <field name="sequence" type="int">26</field>
         </record>
-        <record id="product_template_1" model="product.template">
-            <field name="name">Abilify (aripiprazole)</field>
-            <field name="medical_condition">Mental Health Disorders</field>
-            <field name="image_1920" type="base64" file="medical_store/data/image/abilify.jpg"></field>
-            <field name="public_body_parts_ids" eval="[(6,0,[ref('body_part_1')])]"></field>
-            <field name="list_price">100</field>
-        </record>
-        <record id="product_template_2" model="product.template">
-            <field name="name">acitretin</field>
-            <field name="medical_condition">Psoriasis</field>
-            <field name="image_1920" type="base64" file="medical_store/data/image/acitry-25.jpg"></field>
-            <field name="public_body_parts_ids" eval="[(6,0,[ref('body_part_1')])]"></field>
-            <field name="list_price">300</field>
-        </record>
-        <record id="product_template_3" model="product.template">
-            <field name="name">Actemra (tocilizumab)</field>
-            <field name="medical_condition">Any approved indication or indication currently in Phase III Trials</field>
-            <field name="image_1920" type="base64" file="medical_store/data/image/actemra.jpg"></field>
-            <field name="public_body_parts_ids" eval="[(6,0,[ref('body_part_1')])]"></field>
-            <field name="list_price">250</field>
-        </record>
-        <record id="product_template_4" model="product.template">
-            <field name="name">Adderall (Amphetamine)</field>
-            <field name="medical_condition">ADD/ADHD</field>
-            <field name="image_1920" type="base64" file="medical_store/data/image/Adderall-Sverige.jpg"></field>
-            <field name="public_body_parts_ids" eval="[(6,0,[ref('body_part_1')])]"></field>
-            <field name="list_price">150</field>
-        </record>
-        <record id="product_template_5" model="product.template">
-            <field name="name">Afluria Quadrivalent</field>
-            <field name="medical_condition">Influenza Vaccine</field>
-            <field name="image_1920" type="base64" file="medical_store/data/image/fluvaccine.jpg"></field>
-            <field name="public_body_parts_ids" eval="[(6,0,[ref('body_part_1')])]"></field>
-            <field name="list_price">110</field>
-        </record>
     </data>
 </odoo>
