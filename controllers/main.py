@@ -16,5 +16,4 @@ class TempTest(http.Controller):
     def advance_search_redirect(self, bodypart=None, **kw):
         category = request.env['product.public.category'].browse(bodypart)
         url = f'/shop/category/{category.name}-{bodypart}'
-        breakpoint()
         return request.redirect(url)
