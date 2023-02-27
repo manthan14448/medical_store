@@ -10,7 +10,7 @@
         'security/ir.model.access.csv',
         'views/menu.xml',
         'views/product_view.xml',
-        'views/patient.xml',
+        'views/patient_catogory.xml',
         'views/shop_views.xml',
         'data/body_parts_data.xml',
         'data/products_data.xml',

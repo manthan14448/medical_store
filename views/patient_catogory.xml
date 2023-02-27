@@ -27,12 +27,12 @@
       </tree>
     </field>
   </record>
-  <record id="medical_root_menu_action" model="ir.actions.act_window">
+  <record id="product_public_body_part_action_view" model="ir.actions.act_window">
     <field name="name">Product Body Parts</field>
     <field name="res_model">product.public.body.part</field>
     <field name="view_mode">tree,form</field>
   </record>
 
-  <menuitem id="medicine_menu" action="medical_root_menu_action" parent="Product_Details_menu" name="Product" sequence="0" />
+  <menuitem id="product_catogory_menu" action="product_public_body_part_action_view" parent="medical_root_menu" name="Product Catogory" sequence="0" />
 
 </odoo>

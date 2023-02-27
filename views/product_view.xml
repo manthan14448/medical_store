@@ -35,5 +35,7 @@
         <field name="domain">[]</field>
         <field name="context">{"detailed_type":"Service","Standard_price":"100"}</field>
     </record>
-    <menuitem id="medicine_menu_fisrt" action="product_template_action" parent="Product_Catogory_menu" sequence="0" />
+
+    <menuitem id="product_details_menu" action="product_template_action" parent="medical_root_menu" name="Products" />
+
 </odoo>
