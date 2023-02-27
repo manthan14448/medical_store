@@ -11,6 +11,7 @@
         'views/menu.xml',
         'views/product_view.xml',
         'views/patient_catogory.xml',
+        'views/submenu.xml',
         'views/advance_search_template.xml',
         'views/shop_views.xml',
         

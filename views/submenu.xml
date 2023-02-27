@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="product_details_web_menu" action="product_template_action" web_icon="medical_store,static/description/products.png" sequence="0" />
+    <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="0" />
+</odoo>
