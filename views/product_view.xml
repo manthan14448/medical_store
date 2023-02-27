@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="product.product_template_only_form_view"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='invoice_policy']" position="after">
-                    <field name="public_body_parts_ids" string="Precautions For" widget="many2many_tags"/>
+                    <field name="public_categ_ids" string="Precautions For" widget="many2many_tags"/>
                     <field name="medical_condition" string="Medical Condition" />
                 </xpath>
 

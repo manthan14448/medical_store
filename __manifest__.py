@@ -11,10 +11,11 @@
         'views/menu.xml',
         'views/product_view.xml',
         'views/patient_catogory.xml',
+        'views/advance_search_template.xml',
         'views/shop_views.xml',
-        'data/body_parts_data.xml',
+        
+        'data/product_public_category.xml',
         'data/products_data.xml',
-        'data/advance_search_template.xml',
     ],
     'demo': [],
     'sequence': -200,
