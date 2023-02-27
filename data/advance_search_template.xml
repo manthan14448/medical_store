@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Advance Search -->
-    <template id="advance_search_medical_store" id="advance_search" name="advance_search" inherit_id="website_sale.pricelist_list">
+    <template id="advance_search_medical_store" name="advance_search" inherit_id="website_sale.pricelist_list">
         <xpath expr="//div" position="replace">
             <div t-attf-class="o_pricelist_dropdown dropdown _classes">
                 <a role="button" href="/shop/bodypart" t-attf-class=" btn btn-primary">
