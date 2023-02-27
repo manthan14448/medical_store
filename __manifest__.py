@@ -14,6 +14,7 @@
         'views/shop_views.xml',
         'data/body_parts_data.xml',
         'data/products_data.xml',
+        'data/advance_search_template.xml',
     ],
     'demo': [],
     'sequence': -200,
