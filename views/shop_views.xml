@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
-    <template id="shop_templet" name="template_name">
+    <template id="shop_templet" name="shop_templet">
         <t t-call="website.layout">
             <link rel='stylesheet' href='/medical_store/static/src/css/custom.css' />
             <link rel="stylesheet" href="/medical_store/static/src/css/sc.css" />
