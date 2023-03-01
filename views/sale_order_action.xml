@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_action_view_medical" model="ir.actions.act_window">
+        <field name="name">Order</field>
+        <field name="res_model">sale.order</field>
+        <field name="search_view_id" ref="website_sale.view_sales_order_filter_ecommerce" />
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{'search_default_order_unpaid':1}</field>
+    </record>
+    <record id="view_sale_order_kanban_inherit_medical" model="ir.ui.view">
+        <field name="name">sale.order.view.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sale_order_kanban" />
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='kanban-box']/div/div[hasclass('o_kanban_record_bottom')]/div[hasclass('oe_kanban_bottom_right')]" position="attributes">
+                <attribute name="t-if">False</attribute>
+            </xpath>
+            <xpath expr="//t[@t-name='kanban-box']/div/div/div" position="after">
+                <field name="state" widget="label_selection" style="margin-right:40px;" class="o_field_widget o_readonly_modifier" options="{'classes': {'draft': 'info','sent':'info', 'cancel': 'danger', 'done': 'success'}}" />
+            </xpath>
+            <xpath expr="//t[@t-name='kanban-box']/div/div[hasclass('o_kanban_record_bottom')]" position="before">
+                <div class="o_kanban_image ">
+                    <img alt="Avatar" width="50" style="margin-top:-15px;" t-att-src="kanban_image('res.partner', 'avatar_1024', record.partner_id.raw_value)" options="{'zoom': true, 'zoom_delay': 1000}" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
