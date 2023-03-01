@@ -8,12 +8,11 @@
     'depends': ['website_sale'],
     'data': [
         'security/ir.model.access.csv',
-        'views/menu.xml',
         'views/product_view.xml',
         'views/patient_catogory.xml',
         'views/res_users.xml',
         'views/sale_order_action.xml',
-        'views/submenu.xml',
+        'views/menu.xml',
         'views/advance_search_template.xml',
         'views/shop_views.xml',
         

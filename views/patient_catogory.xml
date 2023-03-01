@@ -35,7 +35,5 @@
     <field name="res_model">product.public.category</field>
     <field name="view_mode">tree,form</field>
   </record>
-
-  <menuitem id="product_catogory_menu" action="product_public_category_action_view" parent="medical_root_menu" name="Product Catogory" sequence="0" />
-  
+    
 </odoo>
