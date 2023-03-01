@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_res_users_medical" model="ir.actions.act_window">
+        <field name="name">Users</field>
+        <field name="res_model">res.users</field>
+        <field name="search_view_id" ref="base.view_users_search" />
+        <field name="view_mode">tree,form,kanban,pivot,graph</field>
+        <field name="domain">[]</field>
+        <field name="context">{'search_default_filter_share': 1}</field>
+        <field name="help">Create and manage Portal Users</field>
+    </record>
+    <record id="action_view_users_kanban_medical" model="ir.actions.act_window.view">
+        <field name="sequence" eval="10" />
+        <field name="view_mode">kanban</field>
+        <field name="act_window_id" ref="medical_store.action_res_users_medical" />
+        <field name="view_id" ref="base.view_res_users_kanban" />
+    </record>
+    <record id="action_view_users_tree_medical" model="ir.actions.act_window.view">
+        <field name="sequence" eval="20" />
+        <field name="view_mode">tree</field>
+        <field name="act_window_id" ref="medical_store.action_res_users_medical" />
+        <field name="view_id" ref="base.view_users_tree" />
+    </record>
+    <record id="action_view_users_form_medical" model="ir.actions.act_window.view">
+        <field name="sequence" eval="30" />
+        <field name="view_mode">form</field>
+        <field name="act_window_id" ref="medical_store.action_res_users_medical" />
+        <field name="view_id" ref="base.view_users_form" />
+    </record>
+    <record id="res_users_view_pivot_medical" model="ir.ui.view">
+        <field name="name">res.users.view.pivot.medical</field>
+        <field name="model">res.users</field>
+        <field name="arch" type="xml">
+            <pivot string="User" disable_linking="true">
+                <field name="create_date" interval="day" />
+                <field name="create_date" interval="month" />
+                <field name="create_date" interval="year" />
+            </pivot>
+        </field>
+    </record>
+    <record id="res_users_view_graph_medica" model="ir.ui.view">
+        <field name="name">res.users.view.graph.medical</field>
+        <field name="model">res.users</field>
+        <field name="arch" type="xml">
+            <graph string="Users" type="pie" >
+                <field name="create_date" interval="day" />
+                <field name="create_date" interval="month" />
+                <field name="create_date" interval="year" />
+            </graph>
+        </field>
+    </record>
+</odoo>
