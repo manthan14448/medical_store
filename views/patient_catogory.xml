@@ -2,7 +2,7 @@
 <odoo>
 
   <record id="product_public_category_form_view" model="ir.ui.view">
-    <field name="name">>product.public.category.form</field>
+    <field name="name">product.public.category.form</field>
     <field name="model">product.public.category</field>
     <field name="arch" type="xml">
       <form string="Website Public Categories">
@@ -21,7 +21,7 @@
     </field>
   </record>
   <record id="product_public_category_tree_view" model="ir.ui.view">
-    <field name="name">>product.public.category.tree</field>
+    <field name="name">product.public.category.tree</field>
     <field name="model">product.public.category</field>
     <field name="arch" type="xml">
       <tree string="Product Body Parts">

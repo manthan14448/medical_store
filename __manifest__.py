@@ -15,7 +15,10 @@
         'views/menu.xml',
         'views/advance_search_template.xml',
         'views/shop_views.xml',
-        
+
+        'data/medical_cod_jounral.xml',
+        'data/payment_icon_data.xml',
+        'data/payment_provider_data.xml',
         'data/product_public_category.xml',
         'data/products_data.xml',
     ],

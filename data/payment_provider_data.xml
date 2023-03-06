@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_cod" model="payment.provider">
+        <field name="name">Cash On Delivery</field>
+        <field name="image_128" type="base64" file="medical_store/static/description/delivery.png" />
+        <field name="state">enabled</field>
+        <field name="display_as">Cash On Delivery</field>
+        <field name="payment_icon_ids" eval="[(6, 0, [ref('medical_store.payment_icon_cc_cod')])]" />
+        <field name="available_country_ids" eval="[(6, 0, [ref('base.in')])]" />
+        <field name="journal_id" ref="medical_store.hr_expense_account_journal" />
+        <field name="pre_msg">india only</field>
+        <field name="pending_msg">Your delivery has been successfully .</field>
+        <field name="done_msg">Your delivery has been successfully processed. Thank you!</field>
+        <field name="cancel_msg">Your delivery has been cancelled.</field>
+        <field name="is_published">True</field>
+    </record>
+    
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_icon_cc_cod" model="payment.icon">
+        <field name="sequence">5</field>
+        <field name="name">COD</field>
+        <field name="image" type="base64" file="medical_store/static/description/delivery.png"/>
+    </record>
+
+</odoo>
