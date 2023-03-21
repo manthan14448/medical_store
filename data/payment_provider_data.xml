@@ -5,6 +5,7 @@
         <field name="image_128" type="base64" file="medical_store/static/description/delivery.png" />
         <field name="state">enabled</field>
         <field name="display_as">Cash On Delivery</field>
+        <field name="code">cod</field>
         <field name="payment_icon_ids" eval="[(6, 0, [ref('medical_store.payment_icon_cc_cod')])]" />
         <field name="available_country_ids" eval="[(6, 0, [ref('base.in')])]" />
         <field name="journal_id" ref="medical_store.hr_expense_account_journal" />

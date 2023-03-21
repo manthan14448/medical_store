@@ -22,6 +22,11 @@
         'data/product_public_category.xml',
         'data/products_data.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'medical_store/static/src/js/payment_form.js'
+        ],
+    },
     'demo': [],
     'sequence': -200,
     'application': True,

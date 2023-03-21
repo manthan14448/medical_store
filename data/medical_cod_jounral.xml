@@ -3,7 +3,7 @@
 
     <record id="hr_expense_account_journal" model="account.journal">
         <field name="name">Cash On Delivery</field>
-        <field name="code">COD</field>
+        <field name="code">cod</field>
         <field name="sequence">1</field>
         <field name="type">bank</field>
         <field name="company_id" ref="base.main_company" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="token_inline_form">
+        <div t-attf-id="demo-token-container-{{token.id}}">
+            <div class="alert alert-warning m-2">
+                <span>
+                    Payments made with this payment method will simulate a processing <b>error</b>.
+                </span>
+            </div>
+        </div>
+    </template>
+
+</odoo>
