@@ -98,6 +98,14 @@
         <field name="is_published">True</field>
         <field name="list_price">150</field>
     </record>
+    <record id="product_template_49" model="product.template">
+        <field name="name">analgesics</field>
+        <field name="medical_condition">spondylolisthesis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/analgesics.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
 
 
 
@@ -383,7 +391,7 @@
         <field name="name">ibuprofen</field>
         <field name="medical_condition">Anti-Inflammatory</field>
         <field name="image_1920" type="base64" file="medical_store/data/image/ibuprofen.jpeg"></field>
-        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15')])]"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15'),ref('product_public_category_body_part_7')])]"></field>
         <field name="is_published">True</field>
         <field name="list_price">150</field>
     </record>
@@ -437,6 +445,44 @@
         <field name="medical_condition">Tzield_thumb</field>
         <field name="image_1920" type="base64" file="medical_store/data/image/Tzield_thumb.jpg"></field>
         <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_50" model="product.template">
+        <field name="name">motrin</field>
+        <field name="medical_condition">humeral shaft fracture</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/motrin.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_51" model="product.template">
+        <field name="name">pain_relief</field>
+        <field name="medical_condition">pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/pain_relief.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_52" model="product.template">
+        <field name="name">pain_relief_liqui_gels</field>
+        <field name="medical_condition">pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/pain_relief_liqui_gels.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_53" model="product.template">
+        <field name="name">provil</field>
+        <field name="medical_condition">humeral shaft fracture</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/provil.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
         <field name="is_published">True</field>
         <field name="list_price">150</field>
     </record>
