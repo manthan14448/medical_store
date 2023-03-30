@@ -4,6 +4,5 @@
     <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="0" />
     <menuitem id="res_users_web_menu_medical" action="action_res_users_medical" web_icon="medical_store,static/description/user.png" sequence="0" />
     <menuitem id="order_web_menu_medical" action="sale_order_action_view_medical" web_icon="medical_store,static/description/order.png" sequence="0" />
-    <menuitem id="payment_token_web_menu_medical" action="payment.action_payment_token" />
 </odoo>
 <!-- action_res_users -->

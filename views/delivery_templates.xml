@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="delivery_status" name="Delivery Status">
+        <t t-call="web.frontend_layout">
+            <div class="oe_structure oe_empty">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pb32">
+                                <img class="img img-fluid mx-auto"
+                                    src="/medical_store/static/description/Delivery_Truck.gif" />
+                            </div>
+                        <div class="col-lg-6 text-lg-start text-center my-auto">
+                            <h2>Your order has been confirm!</h2>
+                            <p></p>
+                            <p>If you think it's mistake, please send us a message on <a href="/contactus">this link</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </t>
+    </template>
+</odoo>

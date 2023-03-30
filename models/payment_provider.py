@@ -18,13 +18,11 @@ class PaymentProvider(models.Model):
         :return: None
         """
         super()._compute_view_configuration_fields()
-        print("called PaymentProvider medical")
         self.filtered(lambda p: p.code == 'cod').show_credentials_page = False
 
     def _compute_feature_support_fields(self):
         """ Override of `payment` to enable additional features. """
         super()._compute_feature_support_fields()
-        print("called _compute_feature_support_fields")
         self.filtered(lambda p: p.code == 'cod').update({
             'support_fees': True,
             'support_manual_capture': True,

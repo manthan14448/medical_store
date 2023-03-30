@@ -10,7 +10,7 @@
         <field name="list_price">100</field>
     </record>
     <record id="product_template_2" model="product.template">
-        <field name="name">acitretin</field>
+        <field name="name">6</field>
         <field name="medical_condition">Psoriasis</field>
         <field name="image_1920" type="base64" file="medical_store/data/image/acitry-25.jpg"></field>
         <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_1')])]"></field>
@@ -42,4 +42,448 @@
         <field name="list_price">110</field>
     </record>
 
+
+
+
+
+
+
+
+
+    <record id="product_template_5" model="product.template">
+        <field name="name">Cart Fit</field>
+        <field name="medical_condition">Herniated Disc</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/cart_fit.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4'),ref('product_public_category_body_part_20')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">200</field>
+    </record>
+    <record id="product_template_6" model="product.template">
+        <field name="name">Myoril</field>
+        <field name="medical_condition">Muscle Strain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/myoril.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">100</field>
+    </record>
+    <record id="product_template_7" model="product.template">
+        <field name="name">Scoliosis</field>
+        <field name="medical_condition">Scoliosis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Scoliosis.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">120</field>
+    </record>
+    <record id="product_template_9" model="product.template">
+        <field name="name">Aleve Tablets</field>
+        <field name="medical_condition">Whiplash</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Aleve_Tablets.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_8" model="product.template">
+        <field name="name">Pinched nerve</field>
+        <field name="medical_condition">Spinal Myelopathy</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Pinched.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+     <record id="product_template_31" model="product.template">
+        <field name="name">rheuma</field>
+        <field name="medical_condition">fast relief from muscle and joint pain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/rheuma.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4'),ref('product_public_category_body_part_6')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_49" model="product.template">
+        <field name="name">analgesics</field>
+        <field name="medical_condition">spondylolisthesis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/analgesics.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_4')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+    <record id="product_template_10" model="product.template">
+        <field name="name">Kerala Ayurveda</field>
+        <field name="medical_condition">Stifness and pain free</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/kerala_ayurveda.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_20'),ref('product_public_category_body_part_6')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_11" model="product.template">
+        <field name="name">nirujam</field>
+        <field name="medical_condition">manage pain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/nirujam.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_20'),ref('product_public_category_body_part_13'),ref('product_public_category_body_part_6'),ref('product_public_category_body_part_25')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_12" model="product.template">
+        <field name="name">utrocon</field>
+        <field name="medical_condition">urinary incontinence</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/utracon.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_14')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_13" model="product.template">
+        <field name="name">reckeweg</field>
+        <field name="medical_condition">Nocturnal enuresis, bladder weakness</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/reckeweg.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_14')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_14" model="product.template">
+        <field name="name">prolaps</field>
+        <field name="medical_condition">pelvic organ prolapse</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/prolaps.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_14')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+    <record id="product_template_15" model="product.template">
+        <field name="name">abaloparatide</field>
+        <field name="medical_condition">Tymlos human parathyroid hormone-related protein analog</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/abaloparatide.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_19')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_16" model="product.template">
+        <field name="name">kprofen</field>
+        <field name="medical_condition">pain, inflammation, swelling, stiffness, and joint pain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/kprofen.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_19')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_17" model="product.template">
+        <field name="name">parecoxib</field>
+        <field name="medical_condition">postoperative pain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/parecoxib.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_19')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_18" model="product.template">
+        <field name="name">bi_alcofan</field>
+        <field name="medical_condition">postoperative pain</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/bi_alcofan.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_19')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_19" model="product.template">
+        <field name="name">piroxicam</field>
+        <field name="medical_condition">pain and help relieve symptoms of arthritis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/piroxicam.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_19')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+    <record id="product_template_20" model="product.template">
+        <field name="name">corn_removes</field>
+        <field name="medical_condition">Corn Remover for Feet, Removes Callus</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/corn_removes.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_26')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_21" model="product.template">
+        <field name="name">blister</field>
+        <field name="medical_condition">feet are particularly prone to blisters</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/blister.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_26')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_22" model="product.template">
+        <field name="name">heel_aid</field>
+        <field name="medical_condition"> Heel pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/heel_aid.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_26')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_23" model="product.template">
+        <field name="name">heel_spour</field>
+        <field name="medical_condition"> Heel protector</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/heel_spour.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_26')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_24" model="product.template">
+        <field name="name">pain_relief</field>
+        <field name="medical_condition">heel pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/pain_relief.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_26')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_25" model="product.template">
+        <field name="name">wrist_brace</field>
+        <field name="medical_condition">Support for Carpal Tunnel Syndrome</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/wrist_brace.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_13')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_26" model="product.template">
+        <field name="name">arthomid</field>
+        <field name="medical_condition">arthritis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/arthomid.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_13')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_27" model="product.template">
+        <field name="name">arthritis</field>
+        <field name="medical_condition">arthritis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/arthritis.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_13')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_28" model="product.template">
+        <field name="name">trigger_finger</field>
+        <field name="medical_condition">trigger_finger</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/trigger_finger.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_13')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_29" model="product.template">
+        <field name="name">humerus_fracture_brace</field>
+        <field name="medical_condition">proximal humerus fracture </field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/humerus_fracture_brace.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_6')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_33" model="product.template">
+        <field name="name">fracture_brace</field>
+        <field name="medical_condition">proximal humerus fracture</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/fracture_brace.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_6'),ref('product_public_category_body_part_8')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_34" model="product.template">
+        <field name="name">nonsteroidal</field>
+        <field name="medical_condition">stiffness</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/nonsteroidal.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_8')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_35" model="product.template">
+        <field name="name">didronal</field>
+        <field name="medical_condition">for Heterotopic Ossification</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/didronal.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_8')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+    <record id="product_template_36" model="product.template">
+        <field name="name">curcumin</field>
+        <field name="medical_condition">for gangrene, atyurvedic treatement</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/curcumin.png"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_25')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_37" model="product.template">
+        <field name="name">Antibiotics</field>
+        <field name="medical_condition">treatement for osteomyelitis</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Antibiotics.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_25')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_38" model="product.template">
+        <field name="name">7-keto</field>
+        <field name="medical_condition">skin loss</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/7-keto.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_25')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    
+
+
+
+
+    <record id="product_template_39" model="product.template">
+        <field name="name">activity_intolerance</field>
+        <field name="medical_condition">Legg-Calve-Perthes</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/activity_intolerance.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_40" model="product.template">
+        <field name="name">Advil_liqui</field>
+        <field name="medical_condition">anti-inflammatory medication</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Advil_liqui.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_41" model="product.template">
+        <field name="name">voltamed</field>
+        <field name="medical_condition">Non-Steroidal Anti-Inflammatory</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/voltamed.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_42" model="product.template">
+        <field name="name">ibuprofen</field>
+        <field name="medical_condition">Anti-Inflammatory</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/ibuprofen.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15'),ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_43" model="product.template">
+        <field name="name">Burana</field>
+        <field name="medical_condition">Non-Steroidal Anti-Inflammatory</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Burana.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_15')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+    <record id="product_template_44" model="product.template">
+        <field name="name">statin</field>
+        <field name="medical_condition">Friedrich's</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/statin.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_45" model="product.template">
+        <field name="name">friedreich_atexia</field>
+        <field name="medical_condition">friedreich_atexia</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/friedreich_atexia.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_46" model="product.template">
+        <field name="name">vegzelma</field>
+        <field name="medical_condition">FDA</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/vegzelma.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_47" model="product.template">
+        <field name="name">cipla</field>
+        <field name="medical_condition">bevacizumab injection syndyma</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/cipla.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_48" model="product.template">
+        <field name="name">Tzield_thumb</field>
+        <field name="medical_condition">Tzield_thumb</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/Tzield_thumb.jpg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_5')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+
+
+
+
+
+
+    <record id="product_template_50" model="product.template">
+        <field name="name">motrin</field>
+        <field name="medical_condition">humeral shaft fracture</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/motrin.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_51" model="product.template">
+        <field name="name">pain_relief</field>
+        <field name="medical_condition">pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/pain_relief.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_52" model="product.template">
+        <field name="name">pain_relief_liqui_gels</field>
+        <field name="medical_condition">pain relief</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/pain_relief_liqui_gels.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
+    <record id="product_template_53" model="product.template">
+        <field name="name">provil</field>
+        <field name="medical_condition">humeral shaft fracture</field>
+        <field name="image_1920" type="base64" file="medical_store/data/image/provil.jpeg"></field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_7')])]"></field>
+        <field name="is_published">True</field>
+        <field name="list_price">150</field>
+    </record>
 </odoo>

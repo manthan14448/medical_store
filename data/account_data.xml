@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_payment_term_cod" model="account.payment.term">
+            <field name="name">Cash On Delivery</field>
+            <field name="note">Payment terms: After Product Receve Payment</field>
+        </record>
+    </data>
+</odoo>

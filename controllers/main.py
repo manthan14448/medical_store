@@ -20,12 +20,10 @@ class PaymentDemoController(http.Controller):
     def cod_simulate_payment(self, **data):
         value = data['reference']
         if value:
-            rec = request.env['payment.transaction'].search(
-                [('reference', '=', value)])
+            rec = request.env['payment.transaction'].search([('reference', '=', value)])
             rec.sudo().write({'state': 'delivery'})
-        print("called PaymentDemoController",data)
+            rec.sudo().sale_order_ids.action_confirm()
 
     @ http.route('/delivery/status', type='http', auth="public", website=True, sitemap=False)
     def shop_delivery_confirmation(self, **post):
-        print('called print(post)')
-        print(post)
+        return request.render('medical_store.delivery_status')

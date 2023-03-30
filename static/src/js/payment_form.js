@@ -24,7 +24,6 @@ odoo.define('payment_cod.payment_form', require => {
             if (code !== 'cod') {
                 return this._super(...arguments);
             }
-            console.log(processingValues)
             return this._rpc({
                 route: '/payment/cod/simulate_payment',
                 params: {
@@ -32,7 +31,7 @@ odoo.define('payment_cod.payment_form', require => {
                     'data': processingValues,
                 },
             }).then(() => {
-                window.location = '/payment/status';
+                window.location = '/delivery/status';
             });;
         },
 
@@ -48,7 +47,6 @@ odoo.define('payment_cod.payment_form', require => {
          */
         _prepareInlineForm: function (code, paymentOptionId, flow) {
             if (code !== 'cod') {
-                console.log("code !== 'cod'");
                 return this._super(...arguments);
             } else if (flow === 'token') {
                 return Promise.resolve();
