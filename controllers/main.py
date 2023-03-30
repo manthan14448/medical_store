@@ -8,7 +8,7 @@ class filter_router_medical(http.Controller):
     def advance_search(self, **kw):
         return request.render("medical_store.shop_templet")
 
-    @http.route('/shop/bodypart/<int:bodypart>', website=True, auth='public')
+    @http.route(['/shop/bodypart/<int:bodypart>', '/bodypart/<int:bodypart>'], website=True, auth='public')
     def advance_search_redirect(self, bodypart=None, **kw):
         category = request.env['product.public.category'].browse(bodypart)
         url = f'/shop/category/{category.name}-{bodypart}'
