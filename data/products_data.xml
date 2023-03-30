@@ -10,7 +10,7 @@
         <field name="list_price">100</field>
     </record>
     <record id="product_template_2" model="product.template">
-        <field name="name">6</field>
+        <field name="name">acitretin</field>
         <field name="medical_condition">Psoriasis</field>
         <field name="image_1920" type="base64" file="medical_store/data/image/acitry-25.jpg"></field>
         <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_1')])]"></field>

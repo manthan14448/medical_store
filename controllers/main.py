@@ -21,6 +21,7 @@ class PaymentDemoController(http.Controller):
         if value:
             rec = request.env['payment.transaction'].search([('reference', '=', value)])
             rec.sudo().write({'state': 'delivery'})
+            rec.sudo().sale_order_ids.write({'client_order_ref':value})
             rec.sudo().sale_order_ids.action_confirm()
 
     @http.route('/delivery/status', type='http', auth="public", website=True, sitemap=False)
