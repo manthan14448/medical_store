@@ -14,7 +14,6 @@ class filter_router_medical(http.Controller):
         url = f'/shop/category/{category.name}-{bodypart}'
         return request.redirect(url)
 
-
 class PaymentDemoController(http.Controller):
     @http.route('/payment/cod/simulate_payment', type='json', auth='public')
     def cod_simulate_payment(self, **data):
@@ -24,6 +23,6 @@ class PaymentDemoController(http.Controller):
             rec.sudo().write({'state': 'delivery'})
             rec.sudo().sale_order_ids.action_confirm()
 
-    @ http.route('/delivery/status', type='http', auth="public", website=True, sitemap=False)
+    @http.route('/delivery/status', type='http', auth="public", website=True, sitemap=False)
     def shop_delivery_confirmation(self, **post):
         return request.render('medical_store.delivery_status')

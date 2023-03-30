@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="action_res_users_medical" model="ir.actions.act_window">
-        <field name="name">Users</field>
+        <field name="name">Portal Users</field>
         <field name="res_model">res.users</field>
         <field name="search_view_id" ref="base.view_users_search" />
         <field name="view_mode">tree,form,kanban,pivot,graph</field>

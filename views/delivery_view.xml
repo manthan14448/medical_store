@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="delivery_pending_view_action" model="ir.actions.act_window">
+        <field name="name">Pending Delivery</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search" />
+        <field name="context">{'search_default_available': 1}</field>
+    </record>
+    <record id="delivery_all_view_action" model="ir.actions.act_window">
+        <field name="name">All Delivery</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search" />
+    </record>
+</odoo>

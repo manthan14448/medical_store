@@ -6,7 +6,7 @@
         <field name="search_view_id" ref="website_sale.view_sales_order_filter_ecommerce" />
         <field name="view_mode">kanban,tree,form</field>
         <field name="domain">[]</field>
-        <field name="context">{'search_default_order_unpaid':1}</field>
+        <field name="context">{'search_default_order_confirmed':1}</field>
     </record>
     <record id="view_sale_order_kanban_inherit_medical" model="ir.ui.view">
         <field name="name">sale.order.view.form.inherit</field>
@@ -26,4 +26,22 @@
             </xpath>
         </field>
     </record>
+
+    <record id="sale_order_website_action" model="ir.actions.act_window">
+        <field name="name">From Website</field>
+        <field name="res_model">sale.order</field>
+        <field name="search_view_id" ref="website_sale.view_sales_order_filter_ecommerce" />
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="context">{'search_default_order_confirmed':1,'search_default_from_website':1}</field>
+    </record>
+    
+    <record id="sale_order_all_order_action" model="ir.actions.act_window">
+        <field name="name">All Order</field>
+        <field name="res_model">sale.order</field>
+        <field name="search_view_id" ref="website_sale.view_sales_order_filter_ecommerce" />
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
 </odoo>
+
+

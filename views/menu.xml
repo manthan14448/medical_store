@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <menuitem id="product_details_web_menu" action="product_template_action" web_icon="medical_store,static/description/products.png" sequence="0" />
-    <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="0" />
+    <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="0" groups="base.group_no_one"/>
     <menuitem id="res_users_web_menu_medical" action="action_res_users_medical" web_icon="medical_store,static/description/user.png" sequence="0" />
-    <menuitem id="order_web_menu_medical" action="sale_order_action_view_medical" web_icon="medical_store,static/description/order.png" sequence="0" />
+    <menuitem id="order_web_menu_medical" action="sale_order_action_view_medical" web_icon="medical_store,static/description/order.png" sequence="0" >
+        <menuitem id="sale_order_website_action_menu_medical" name="Website" action="sale_order_website_action"/>
+        <menuitem id="sale_order_all_order_action_menu_medical" name="All Order" action="sale_order_all_order_action"/>
+    </menuitem>
+    <menuitem id="delivery_web_menu_medical" action="delivery_pending_view_action" name="Delivery" web_icon="medical_store,static/description/truck.png" sequence="0" >
+            <menuitem id="delivery_all_view_action_menu_medical" name="All Delivery" action="delivery_all_view_action"/>
+    </menuitem>
+
 </odoo>
 <!-- action_res_users -->
