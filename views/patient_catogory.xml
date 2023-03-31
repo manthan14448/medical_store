@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+  <!-- form view -->
   <record id="product_public_category_form_view" model="ir.ui.view">
     <field name="name">product.public.category.form</field>
     <field name="model">product.public.category</field>
@@ -20,6 +20,7 @@
       </form>
     </field>
   </record>
+  <!-- tree view -->
   <record id="product_public_category_tree_view" model="ir.ui.view">
     <field name="name">product.public.category.tree</field>
     <field name="model">product.public.category</field>
@@ -30,10 +31,10 @@
       </tree>
     </field>
   </record>
+
   <record id="product_public_category_action_view" model="ir.actions.act_window">
     <field name="name">Product Body Parts</field>
     <field name="res_model">product.public.category</field>
     <field name="view_mode">tree,form</field>
   </record>
-    
 </odoo>

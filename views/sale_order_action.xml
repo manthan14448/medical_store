@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- form edited -->
+    <record id="view_sale_order_form_inherit_medical" model="ir.ui.view">
+        <field name="name">sale.order.view.form.inherit.medical</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='delivery_status']" position="after">
+                    <field name="delivery_signed_by"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- kanban edited -->
     <record id="view_sale_order_kanban_inherit_medical" model="ir.ui.view">
-        <field name="name">sale.order.view.form.inherit</field>
+        <field name="name">sale.order.view.kanban.inherit.medical</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_sale_order_kanban" />
         <field name="arch" type="xml">
@@ -19,6 +32,19 @@
         </field>
     </record>
 
+    <!-- search view -->
+    <record id="view_sales_order_filter_ecommerce_inherit_medical" model="ir.ui.view">
+        <field name="name">sale.order.ecommerce.search.view.inherit.medical</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="website_sale.view_sales_order_filter_ecommerce"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='order_confirmed']"  position="before">
+                <filter string="Invoice Status" name="invoice_status" domain="[('invoice_status','=',('to invoice','no'))]" /> 
+            </xpath>
+        </field>
+    </record>
+
+
     <record id="sale_order_website_action" model="ir.actions.act_window">
         <field name="name">From Website</field>
         <field name="res_model">sale.order</field>
@@ -32,8 +58,10 @@
         <field name="res_model">sale.order</field>
         <field name="search_view_id" ref="website_sale.view_sales_order_filter_ecommerce" />
         <field name="view_mode">kanban,tree,form</field>
+        <field name="context">{'search_default_invoice_status':1}</field>
     </record>
 
+                        
 </odoo>
 
 

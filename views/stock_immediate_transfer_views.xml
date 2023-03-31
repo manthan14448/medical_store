@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_immediate_transfer_inherit_medical" model="ir.ui.view">
+        <field name="name">stock.immediate.transfer.inherit.medical</field>
+        <field name="model">stock.immediate.transfer</field>
+        <field name="inherit_id" ref="stock.view_immediate_transfer"/>
+        <field name="arch" type="xml">
+        <xpath expr="//form/p" position="replace">
+            <p class="fs-3 text-info">Confirm you deliver all product ?</p>
+        </xpath>
+        <xpath expr="//footer/button[@name='process']" position="attributes">
+            <attribute name="string">Yes Delivered</attribute>
+            <attribute name="class">bg-success text-white</attribute>
+        </xpath>
+        <xpath expr="//footer/button[@special='cancel']" position="attributes">
+            <attribute name="string">No</attribute>
+            <attribute name="class">bg-danger text-white</attribute>
+        </xpath>
+        </field>
+    </record>
+</odoo>

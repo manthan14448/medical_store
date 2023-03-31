@@ -18,6 +18,8 @@
         'views/advance_search_template.xml',
         'views/shop_views.xml',
         'views/delivery_templates.xml',
+        'views/stock_immediate_transfer_views.xml',
+        'views/stock_picking_type_views.xml',
         
         'data/medical_cod_jounral.xml',
         'data/payment_icon_data.xml',
