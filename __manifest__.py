@@ -8,6 +8,7 @@
     'depends': ['website_sale', 'stock', 'l10n_in'],
     'data': [
         'security/ir.model.access.csv',
+        'views/account_move_view.xml',
         'views/sale_order_action.xml',
         'views/product_view.xml',
         'views/patient_catogory.xml',

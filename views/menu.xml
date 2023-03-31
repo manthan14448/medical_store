@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <menuitem id="product_details_web_menu" action="product_template_action" web_icon="medical_store,static/description/products.png" sequence="0" />
-    <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="0" groups="base.group_no_one"/>
-    <menuitem id="res_users_web_menu_medical" action="action_res_users_medical" web_icon="medical_store,static/description/user.png" sequence="0" />
-    <menuitem id="order_web_menu_medical" action="sale_order_action_view_medical" web_icon="medical_store,static/description/order.png" sequence="0" >
-        <menuitem id="sale_order_website_action_menu_medical" name="Website" action="sale_order_website_action"/>
-        <menuitem id="sale_order_all_order_action_menu_medical" name="All Order" action="sale_order_all_order_action"/>
+    <menuitem id="order_web_menu_medical" name="Order" web_icon="medical_store,static/description/order.png" sequence="1" >
+        <menuitem id="create_order_web_menu_medical" name="Create Orders" action="account_move_action_view_medical" sequence="10"/>
+        <menuitem id="sale_order_all_order_action_menu_medical" name="All Pending Orders" action="sale_order_all_order_action" sequence="20"/>
+        <menuitem id="sale_order_website_action_menu_medical" name="All Pending Deliverys" action="delivery_pending_view_action" sequence="30"/>
     </menuitem>
-    <menuitem id="delivery_web_menu_medical" action="delivery_pending_view_action" name="Delivery" web_icon="medical_store,static/description/truck.png" sequence="0" >
-            <menuitem id="delivery_all_view_action_menu_medical" name="All Delivery" action="delivery_all_view_action"/>
+    <menuitem id="product_details_web_menu" action="product_template_action" web_icon="medical_store,static/description/products.png" sequence="2" />
+    <menuitem id="product_catogory_web_menu" action="product_public_category_action_view" web_icon="medical_store,static/description/product_category.png" sequence="3" groups="base.group_no_one"/>
+    <menuitem id="res_users_web_menu_medical" action="action_res_users_medical" web_icon="medical_store,static/description/user.png" sequence="4" />
+    <menuitem id="email_sms_web_menu_medical"  name="Send" web_icon="medical_store,static/description/send.png" sequence="5" > 
+            <menuitem id="email_web_menu_medical" name="Email" action="mail.action_view_mail_mail" sequence="10"/>
+            <menuitem id="sms_web_menu_medical" name="SMS" action="sms.sms_sms_action" sequence="20"/>
+            <menuitem id="attachments_web_menu_medical" name="Attachments" action="base.action_attachment" sequence="30"/>
     </menuitem>
-
 </odoo>
-<!-- action_res_users -->

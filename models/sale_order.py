@@ -7,5 +7,4 @@ class SaleOrder(models.Model):
 
     def action_confirm(self):
         rec = super().action_confirm()
-        breakpoint()
         return rec
