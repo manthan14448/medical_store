@@ -10,10 +10,12 @@
     <record id="product_public_category_body_part_2" model="product.public.category">
         <field name="name">Midface</field>
         <field name="sequence" type="int">2</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Midface.jpeg" />
     </record>
     <record id="product_public_category_body_part_3" model="product.public.category">
         <field name="name">Mandible</field>
         <field name="sequence" type="int">3</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Mandible.jpeg" />
     </record>
     <record id="product_public_category_body_part_4" model="product.public.category">
         <field name="name">Spine</field>
@@ -28,6 +30,7 @@
     <record id="product_public_category_body_part_6" model="product.public.category">
         <field name="name">Proximal_Humerus</field>
         <field name="sequence" type="int">6</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Proximal-Humerus.jpeg" />
     </record>
     <record id="product_public_category_body_part_7" model="product.public.category">
         <field name="name">Humeral_Shaft</field>
@@ -46,18 +49,22 @@
     <record id="product_public_category_body_part_10" model="product.public.category">
         <field name="name">Proximal_Radius</field>
         <field name="sequence" type="int">10</field>
+         <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Proximal-Radius.jpg" />
     </record>
     <record id="product_public_category_body_part_11" model="product.public.category">
         <field name="name">Radius</field>
         <field name="sequence" type="int">11</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Radius.jpg" />
     </record>
     <record id="product_public_category_body_part_12" model="product.public.category">
         <field name="name">Distal_Radius</field>
         <field name="sequence" type="int">12</field>
+         <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Distal-Radius.jpeg" />
     </record>
     <record id="product_public_category_body_part_13" model="product.public.category">
         <field name="name">Hand</field>
         <field name="sequence" type="int">13</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/hand.jpeg" />
     </record>
     <record id="product_public_category_body_part_14" model="product.public.category">
         <field name="name">Pelvis</field>
@@ -67,6 +74,7 @@
     <record id="product_public_category_body_part_15" model="product.public.category">
         <field name="name">Femoral_Head</field>
         <field name="sequence" type="int">15</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Femoral-Head.jpeg" />
     </record>
     <record id="product_public_category_body_part_16" model="product.public.category">
         <field name="name">Proximal_Femur</field>
@@ -75,6 +83,7 @@
     <record id="product_public_category_body_part_17" model="product.public.category">
         <field name="name">Femoral_Shaft</field>
         <field name="sequence" type="int">17</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Femoral-Shaft.jpeg" />
     </record>
     <record id="product_public_category_body_part_18" model="product.public.category">
         <field name="name">Distal_Femur</field>
@@ -98,10 +107,12 @@
     <record id="product_public_category_body_part_22" model="product.public.category">
         <field name="name">Lateral_Proximal_Tibia</field>
         <field name="sequence" type="int">22</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Lateral-Proximal-Tibia.jpg" />
     </record>
     <record id="product_public_category_body_part_23" model="product.public.category">
         <field name="name">Tibial_Shaft</field>
         <field name="sequence" type="int">23</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Tibial-Shaft.jpeg" />
     </record>
     <record id="product_public_category_body_part_24" model="product.public.category">
         <field name="name">Fibula</field>
@@ -111,6 +122,7 @@
     <record id="product_public_category_body_part_25" model="product.public.category">
         <field name="name">Distal_Tibia</field>
         <field name="sequence" type="int">25</field>
+        <field name="image_1920" type="base64" file="medical_store/static/src/img/body_parts/Distal-Tibia.jpg" />
     </record>
     <record id="product_public_category_body_part_26" model="product.public.category">
         <field name="name">Foot</field>
