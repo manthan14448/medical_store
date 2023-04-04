@@ -14,6 +14,7 @@
         'views/patient_catogory.xml',
         'views/res_users.xml',
         'views/delivery_view.xml',
+        'views/hospital_doctor_view.xml',
         'views/menu.xml',
         'views/advance_search_template.xml',
         'views/shop_views.xml',

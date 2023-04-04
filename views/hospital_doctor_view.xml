@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hospital_doctor_view_tree" model="ir.ui.view">
+        <field name="name">hospital.doctor.view.tree</field>
+        <field name="model">hospital.doctor</field>
+        <field name="arch" type="xml">
+            <tree string="doctor_info">
+                <field name="name"></field>
+                <field name="gender"></field>
+            </tree>
+        </field>
+    </record>
+    <record id="hospital_doctor_view_form" model="ir.ui.view">
+        <field name="name">hospital.doctor.view.form</field>
+        <field name="model">hospital.doctor</field>
+        <field name="arch" type="xml">
+            <form string="Docter Details">
+                <sheet>
+                    <field name="image_1920" widget="image" class="oe_avatar" />
+                    <group>
+                        <field name="name"></field>
+                        <field name="gender"></field>
+                        <field name="expertIn" widget="many2many_tags" options="{'no_create':True,'no_create_edit':True}"/>
+                        <field name="Rank"></field>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="hospital_doctor_action_medical" model="ir.actions.act_window">
+    <field name="name">Doctor</field>
+    <field name="res_model">hospital.doctor</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            Add New Doctor Information
+        </p>
+    </field>
+    </record>
+
+    <!-- Doctor Rank Action -->
+    <record id="hospital_doctor_rank_action_medical" model="ir.actions.act_window">
+    <field name="name">Doctor Rank</field>
+    <field name="res_model">hospital.doctor.rank</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            Add New Doctor Rank Information
+        </p>
+    </field>
+    </record>
+</odoo>

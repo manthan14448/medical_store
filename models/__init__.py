@@ -1,4 +1,4 @@
-from . import medical
+from . import hospital_doctor
 from . import product_template
 from . import payment_provider
 from . import payment_transaction
