@@ -13,6 +13,7 @@
         'views/product_view.xml',
         'views/patient_catogory.xml',
         'views/res_users.xml',
+        'views/res_partner.xml',
         'views/delivery_view.xml',
         'views/hospital_doctor_view.xml',
         'views/menu.xml',
@@ -22,6 +23,7 @@
         'views/stock_immediate_transfer_views.xml',
         'views/stock_picking_type_views.xml',
         
+        'data/res_partner_demo.xml',
         'data/medical_cod_jounral.xml',
         'data/payment_icon_data.xml',
         'data/payment_provider_data.xml',

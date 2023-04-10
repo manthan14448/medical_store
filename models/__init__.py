@@ -1,4 +1,5 @@
-from . import hospital_doctor
+from . import res_partner
+from . import res_users
 from . import product_template
 from . import payment_provider
 from . import payment_transaction
