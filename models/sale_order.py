@@ -32,6 +32,8 @@ class SaleOrder(models.Model):
                     'active_ids': order.invoice_ids.ids,
                     'active_id': order.invoice_ids[0].id,
                 }
-                payment_register = self.env['account.payment.register'].with_context(context).create({})
+                payment_register = self.env['account.payment.register'].with_context(context).create({
+                    'journal_id': self.env['account.journal'].search([('type', '=', 'cod')], limit=1).id
+                })
                 payment_register.action_create_payments()
                 #

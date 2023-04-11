@@ -35,6 +35,6 @@
   <record id="product_public_category_action_view" model="ir.actions.act_window">
     <field name="name">Product Body Parts</field>
     <field name="res_model">product.public.category</field>
-    <field name="view_mode">tree,form</field>
+    <field name="view_mode">kanban,tree,form</field>
   </record>
 </odoo>

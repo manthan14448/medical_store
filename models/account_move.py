@@ -14,3 +14,10 @@ class AccountMove(models.Model):
                 'journal_id': self.env['account.journal'].search([('type', '=', 'cash')], limit=1).id,
             })
         payment_register.action_create_payments()
+
+
+class AccountJournal(models.Model):
+    _inherit = "account.journal"
+
+    type = fields.Selection(
+        selection_add=[('cod', 'COD')], ondelete={'cod': 'cascade'})
