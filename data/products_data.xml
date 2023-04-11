@@ -6,7 +6,7 @@
         <field name="medical_condition">Mental Health Disorders</field>
         <field name="image_1920" type="base64" file="medical_store/data/image/abilify.jpg"></field>
         <field name="public_categ_ids" eval="[(6,0,[ref('product_public_category_body_part_1')])]"></field>
-       <field name="is_published">True</field>
+        <field name="is_published">True</field>
         <field name="list_price">100</field>
     </record>
     <record id="product_template_2" model="product.template">
