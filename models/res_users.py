@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import  models
 
 
 class ResUsers(models.Model):
@@ -11,3 +11,4 @@ class ResUsers(models.Model):
         portal = self.env['portal.wizard.user'].create(
             {'wizard_id': portal_wizard.id, 'partner_id': self.partner_id.id})
         portal.with_context(active_test=True)._send_email()
+        portal.sudo().unlink()

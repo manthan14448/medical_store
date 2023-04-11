@@ -23,6 +23,9 @@ class SaleOrder(models.Model):
                 # INVOIC DONE STAGE
                 payment.create_invoices()
                 order.invoice_ids[0].action_post()
+                # Payment.transection go to done stage
+                if order.invoice_ids[0].transaction_ids:
+                    order.invoice_ids[0].transaction_ids.sudo().write({'state': 'done'})
                 # INVOICE PAYMENT STATE GO ACCOUNT.PAYMENT Pcod ID
                 context = {
                     'active_model': 'account.move',
@@ -31,3 +34,4 @@ class SaleOrder(models.Model):
                 }
                 payment_register = self.env['account.payment.register'].with_context(context).create({})
                 payment_register.action_create_payments()
+                #

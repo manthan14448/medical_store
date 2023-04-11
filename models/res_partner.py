@@ -8,7 +8,7 @@ class ResPartner(models.Model):
     expertIn = fields.Many2many('product.public.category', string="Expert In", tracking=True)
 
 
-class HospitalDoctorrANK(models.Model):
+class HospitalDoctorRank(models.Model):
     _name = 'hospital.doctor.rank'
     _description = 'Doctor Rank'
 

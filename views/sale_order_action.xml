@@ -39,7 +39,7 @@
         <field name="inherit_id" ref="website_sale.view_sales_order_filter_ecommerce"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='order_confirmed']"  position="before">
-                <filter string="Invoice Status" name="invoice_status" domain="[('invoice_status','=',('to invoice','no'))]" /> 
+                <filter string="Invoice Status" name="invoice_status" domain="[('invoice_status','in',('to invoice','no'))]" /> 
             </xpath>
         </field>
     </record>
