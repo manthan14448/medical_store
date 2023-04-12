@@ -22,13 +22,19 @@
         'views/delivery_templates.xml',
         'views/stock_immediate_transfer_views.xml',
         'views/stock_picking_type_views.xml',
+        'views/payment_transaction_views.xml',
+        'views/sale_stock_portal_template.xml',
         
+        'report/report_deliveryslip.xml',
+
         'data/res_partner_demo.xml',
         'data/medical_cod_jounral.xml',
         'data/payment_icon_data.xml',
         'data/payment_provider_data.xml',
         'data/product_public_category.xml',
         'data/products_data.xml',
+
+        'wizard/cancel_action_view.xml' 
     ],
     'assets': {
         'web.assets_frontend': [

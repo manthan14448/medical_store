@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_delivery_document_inherit_medical" name="Deliver Cancel" inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[@name='div_sched_date']" position="after">
+            <t t-if="o.state == 'cancel'">
+                <div class="col-auto text-danger">
+                        <strong>Delivery Cancel Reason:</strong>
+                        <em><p t-field="o.cancelreason"/></em>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

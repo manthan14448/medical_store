@@ -5,7 +5,9 @@
         <field name="model">payment.transaction</field>
         <field name="inherit_id" ref="payment.payment_transaction_form"/>
         <field name="arch" type="xml">
-            <!-- using for future -->
+            <xpath expr="//field[@name='state']" position="attributes">
+                <attribute name="statusbar_visible">draft,pending,authorized,done,cancel,error</attribute>
+            </xpath>
         </field>
     </record>
 </odoo>

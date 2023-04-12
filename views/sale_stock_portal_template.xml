@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sale_order_portal_content_inherit_medical" name="Delivery Cancel" inherit_id="sale.sale_order_portal_content">
+        <xpath expr="//div[@name='delivery_details']/div" position="replace">
+        <t t-if="picking.state == 'cancel'">
+            Reason:
+            <em><span class="text-danger"
+                t-field="picking.cancelreason"/></em>
+        </t>
+        <t t-else="">
+                Date:
+                <span class="text-muted"
+                t-field="picking.date_done"
+                t-options="{'date_only': True}"/>
+                <span t-if="picking.state in ['draft', 'waiting', 'confirmed', 'assigned']"
+                class="text-muted"
+                t-field="picking.scheduled_date"
+                t-options="{'date_only': True}"/>
+        </t>    
+        </xpath>
+    </template>
+</odoo>

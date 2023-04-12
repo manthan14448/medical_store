@@ -8,6 +8,18 @@
             <xpath expr="//field[@name='move_ids_without_package']/tree/field[@name='quantity_done']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
+
+            <xpath expr="//button[@name='action_toggle_is_locked']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="cancelreason" attrs="{'invisible': [('state', '!=', 'cancel')]}"/>    
+            </xpath>
+
+            <xpath expr="//button[@name='action_cancel']" position="after">
+                <button name="action_reopen" class="btn btn-primary" attrs="{'invisible': [('state', 'not in', ('cancel'))]}" string="ReOpen" groups="base.group_user" type="object" data-hotkey="r"/>
+            </xpath>
         </field>
     </record>
 </odoo>

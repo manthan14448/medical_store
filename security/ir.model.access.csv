@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 medical_store.access_hospital_doctor_rank,access_hospital_doctor_rank,medical_store.model_hospital_doctor_rank,base.group_user,1,1,1,1
+medical_store.access_cancel_delivery,access_cancel_delivery,medical_store.model_cancel_delivery,base.group_user,1,1,1,1
