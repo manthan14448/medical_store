@@ -22,8 +22,7 @@
             <xpath expr="//page[@name='purchase']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
-            <xpath expr="//group[@name='shop']/field[@name='public_categ_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
+            <xpath expr="//group[@name='shop']/field[@name='public_categ_ids']" position="replace">
             </xpath>
         </field>
     </record>    

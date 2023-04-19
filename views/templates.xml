@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="docotor_view_inherit_medical" name="Dynamic Doctor" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='product_detail_main']" position="after">
+            <t t-if="doctors">
+                <hr />
+                <h2 class="text-center text-muted"><u>Doctor Consultation</u></h2>
+                <div class="carousel slide">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item active" style="min-height: 383.7px;">
+                            <div class="row">
+                                <t t-foreach="doctors" t-as="doctor">
+                                    <div class="d-flex flex-grow-0 flex-shrink-0 col-3">
+                                        <div class="o_carousel_product_card bg-transparent w-100 card border-0">
+                                            <a class="o_carousel_product_img_link o_dynamic_product_hovered stretched-link"
+                                                t-att-href="doctor.get('website')">
+                                                <div class="overflow-hidden rounded">
+                                                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto"
+                                                        loading="lazy"
+                                                        t-attf-src="/web/image/res.partner/#{doctor.get('id')}/image_1024/"
+                                                        t-att-alt="doctor.get('name')" />
+                                                </div>
+                                            </a>
+                                            <div
+                                                class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-50">
+                                                <div class="h5 text-danger "><u>Dr. <span t-out="doctor.get('name')" /></u>
+                                                </div>
+                                                <table>
+                                                    <tr>
+                                                        <td>Rank</td>
+                                                        <td><span t-out="doctor.get('Rank')" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Address</td>
+                                                        <td><span t-out="doctor.get('contact_address')" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mobile</td>
+                                                        <td><span t-out="doctor.get('phone')" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email</td>
+                                                        <td><span t-out="doctor.get('email')" /></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

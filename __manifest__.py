@@ -24,6 +24,7 @@
         'views/stock_picking_type_views.xml',
         'views/payment_transaction_views.xml',
         'views/sale_stock_portal_template.xml',
+        'views/templates.xml',
         
         'report/report_deliveryslip.xml',
 
