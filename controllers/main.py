@@ -1,5 +1,6 @@
 from odoo import http
 from odoo.http import request
+import random
 from odoo.addons.website_sale.controllers import main
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
@@ -39,9 +40,16 @@ class WebsiteSale(WebsiteSale):
         if request.uid != 4:
             user = request.env['res.users'].sudo().browse(request.uid)
             if user.country_id.name == "India":
-                product_cat_id = product_val['main_object'].public_categ_ids.id
-                doctors = request.env['res.partner'].sudo().search_read([
-                    ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor')],
-                    ['id', 'name', 'Rank', 'phone', 'email', 'contact_address', 'image_medium', 'website'])
+                product_cat_id = product_val['main_object'].public_categ_ids.ids
+                read_doctors = request.env['res.partner'].sudo().search_count([
+                    ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor'), ('premium', '=', 'True')])
+                if read_doctors >= 4 :
+                    doctors = request.env['res.partner'].sudo().search_read([
+                        ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor'), ('premium', '=', 'True')],
+                            ['id', 'name', 'Rank', 'phone', 'email', 'contact_address', 'image_medium', 'website'],limit=4)
+                else:
+                    doctors = request.env['res.partner'].sudo().search_read([
+                        ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor')],
+                        ['id', 'name', 'Rank', 'phone', 'email', 'contact_address', 'image_medium', 'website'], order='premium', limit=4)
                 product_val['doctors'] = doctors
         return product_val

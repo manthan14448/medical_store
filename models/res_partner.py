@@ -5,8 +5,11 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
     
     Rank = fields.Many2one("hospital.doctor.rank",name="Doctor Rank", tracking=True)
+    premium = fields.Boolean('premium')
     expertIn = fields.Many2many('product.public.category', string="Expert In", tracking=True)
 
+    def _read_out__doctor_image(self):
+        return self.image_1920
 
 class HospitalDoctorRank(models.Model):
     _name = 'hospital.doctor.rank'
