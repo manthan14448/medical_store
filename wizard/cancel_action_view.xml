@@ -24,4 +24,5 @@
         <field name="view_id" ref="cancel_reason_view_form"/>          
         <field name="target">new</field>     
     </record>
+
 </odoo>

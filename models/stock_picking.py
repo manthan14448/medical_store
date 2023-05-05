@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from odoo import fields, models, _
 from datetime import datetime,timedelta
 
@@ -54,7 +55,7 @@ class StockPicking(models.Model):
                 'delivery_id': stock.id,
             })
             return {
-                'name': _('Test Wizard'),
+                'name': _('Cancel Reason'),
                 'type': 'ir.actions.act_window',
                 'res_model': 'cancel.delivery',
                 'view_mode': 'form',

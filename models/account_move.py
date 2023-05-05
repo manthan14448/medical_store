@@ -1,11 +1,11 @@
-from odoo import fields, models, api
+# -*- coding: utf-8 -*-
+from odoo import fields, models
 
 
 class AccountMove(models.Model):
     _inherit = "account.move"
 
     #created button on account called Cash Payment when click it create paymenet mode in cash
-
     def is_invoice(self, include_receipts=False):
         account = super().is_invoice()
         return self  

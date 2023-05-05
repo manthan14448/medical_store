@@ -24,6 +24,7 @@
         'views/stock_picking_type_views.xml',
         'views/payment_transaction_views.xml',
         'views/sale_stock_portal_template.xml',
+        'views/doctor_images.xml',
         'views/templates.xml',
         
         'report/report_deliveryslip.xml',
@@ -47,4 +48,5 @@
     'application': True,
     'installable': True,
     'auto_install': False,
+    'license': 'LGPL-3',
 }

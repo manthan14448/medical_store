@@ -1,15 +1,11 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
+# -*- coding: utf-8 -*-
 from odoo import _, api, fields, models
-
 
 
 class PaymentProvider(models.Model):
     _inherit = 'payment.provider'
 
     code = fields.Selection(selection_add=[('cod', 'COD')], ondelete={'cod': 'set default'})
-
-    #=== COMPUTE METHODS ===#
 
     @api.depends('code')
     def _compute_view_configuration_fields(self):

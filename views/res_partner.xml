@@ -22,6 +22,15 @@
                     <field name="Rank"></field>
                     <field name="expertIn" widget="many2many_tags"/>
                 </xpath>
+                <xpath expr="//page[@name='sales_purchases']" position="after">
+                    <page name="Total Images" string="Images">
+                        <field name="images_ids">
+                            <tree editable="buttom" multi_edit="1">
+                               <field name="images" widget="image" class="oe_avatar" />
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
             </field>
         </record>
 
