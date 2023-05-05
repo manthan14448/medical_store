@@ -19,11 +19,11 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='vat']" position="after">
-                    <field name="Rank"></field>
-                    <field name="expertIn" widget="many2many_tags"/>
+                    <field name="Rank" attrs="{'invisible': [('function', '!=', 'Doctor')]}"></field>
+                    <field name="expertIn" widget="many2many_tags" attrs="{'invisible': [('function', '!=', 'Doctor')]}"/>
                 </xpath>
                 <xpath expr="//page[@name='sales_purchases']" position="after">
-                    <page name="Total Images" string="Images">
+                    <page name="Total Images" string="Images" attrs="{'invisible': [('function', '!=', 'Doctor')]}">
                         <field name="images_ids">
                             <tree editable="buttom" multi_edit="1">
                                <field name="images" widget="image" class="oe_avatar" />
