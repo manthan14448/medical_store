@@ -8,7 +8,7 @@ class StockPicking(models.Model):
     
     cancelreason = fields.Char(string="Cancel Reason",readonly=True)
 
-    # when click button_validate it write deliverd name and data
+    # when click button_validate it write delivered name and data
     def button_validate(self):
         res = super().button_validate()
         if self.sale_id:
@@ -33,10 +33,11 @@ class StockPicking(models.Model):
             stockcopy = self.copy()
             stockcopy.state = 'confirmed'
             stockcopy.date_deadline = datetime.now() + timedelta(days=3)
-            stockcopy.move_ids_without_package.quantity_done = stockcopy.move_ids_without_package.product_uom_qty
+            for qty in stockcopy.move_ids_without_package:
+                stockcopy.move_ids_without_package.quantity_done = qty.product_uom_qty
             return self.called_action_reopen(stockcopy)
     
-    #use for calling view in stock if alredy delivery done then it open not creating another data its open 
+    #use for calling view in stock if already delivery done then it open not creating another data its open 
     # existing model data but if data state in cancel then it create new data   
     def called_action_reopen(self, res_id):
         view_id = self.env.ref('stock.view_picking_form').id
@@ -48,7 +49,7 @@ class StockPicking(models.Model):
             'type': 'ir.actions.act_window',
             'res_id': res_id.id,
         }
-    
+
     def action_cancel(self):
         for stock in self.filtered(lambda rec: rec.state != 'cancel'):
             wizard = self.env['cancel.delivery'].create({

@@ -15,17 +15,15 @@ class SaleOrder(models.Model):
                 # CREATE INVOICE
                 context = {
                     'active_model': 'sale.order',
-                    'active_ids': order.order_line.ids,
+                    'active_ids': [order.id],
                     'active_id': order.id,
                 }
                 payment = self.env['sale.advance.payment.inv'].with_context(context).create({
                     'advance_payment_method': 'delivered'
                 })
-                #  DONE STAGE
+                # INVOIC DONE STAGE
                 payment.create_invoices()
                 order.invoice_ids[0].action_post()
-                print(order.invoice_ids[0].state)
-                order.invoice_ids[0].direct_send_mail_to_user()
                 # Payment.transection go to done stage
                 if order.invoice_ids[0].transaction_ids:
                     order.invoice_ids[0].transaction_ids.sudo().write({'state': 'done'})
@@ -40,4 +38,3 @@ class SaleOrder(models.Model):
                     'journal_id': self.env['account.journal'].search([('type', '=', 'cod')], limit=1).id
                 })
                 payment_register.action_create_payments()
-                #
