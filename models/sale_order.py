@@ -21,10 +21,10 @@ class SaleOrder(models.Model):
                 payment = self.env['sale.advance.payment.inv'].with_context(context).create({
                     'advance_payment_method': 'delivered'
                 })
-                # INVOIC DONE STAGE
+                # INVOICE DONE STAGE
                 payment.create_invoices()
                 order.invoice_ids[0].action_post()
-                # Payment.transection go to done stage
+                # Payment.transaction go to done stage
                 if order.invoice_ids[0].transaction_ids:
                     order.invoice_ids[0].transaction_ids.sudo().write({'state': 'done'})
 

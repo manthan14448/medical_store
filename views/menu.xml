@@ -19,6 +19,10 @@
         <menuitem id="doctor_rank_menu_medical" name="Doctor Rank" action="hospital_doctor_rank_action_medical" sequence="10" groups="base.group_no_one"/>
     </menuitem>
 
+    <menuitem id="doctor_hospital_web_menu_medical1" name="Doctor" action="action_partner_customer_form_inherit_medical" web_icon="medical_store,static/description/doctor.png" sequence="5" >
+        <menuitem id="doctor_rank_menu_medical" name="Doctor Rank new" action="hospital_doctor_rank_action_medical" sequence="10" groups="base.group_no_one"/>
+        <menuitem id="doctor_rank_menu_medical_test" name="Doctor Rank new test" action="hospital_doctor_rank_action_medical" sequence="20" groups="base.group_no_one"/>
+    </menuitem>
     <!-- Send menu -->
     <menuitem id="email_sms_web_menu_medical"  name="Send" web_icon="medical_store,static/description/send.png" sequence="6" > 
             <menuitem id="email_web_menu_medical" name="Email" action="mail.action_view_mail_mail" sequence="10"/>

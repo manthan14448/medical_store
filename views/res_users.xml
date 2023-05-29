@@ -16,7 +16,7 @@
         <field name="act_window_id" ref="medical_store.action_res_users_medical" />
         <field name="view_id" ref="base.view_res_users_kanban" />
     </record>
-
+    
     <record id="action_view_users_tree_medical" model="ir.actions.act_window.view">
         <field name="sequence" eval="20" />
         <field name="view_mode">tree</field>

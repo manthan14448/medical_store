@@ -42,7 +42,7 @@
                                                 <table>
                                                     <tr>
                                                         <td>Rank</td>
-                                                        <td><span t-out="doctor.get('Rank')" /></td>
+                                                        <td><span t-out="doctor.get('Rank')[1]" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Address</td>
@@ -50,7 +50,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Mobile</td>
-                                                        <td><span t-out="doctor.get('phone')" /></td>
+                                                        <td><span t-out="doctor.get('mobile')" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Email</td>

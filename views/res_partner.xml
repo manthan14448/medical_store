@@ -26,7 +26,7 @@
                     <page name="Total Images" string="Images" attrs="{'invisible': [('function', '!=', 'Doctor')]}">
                         <field name="images_ids">
                             <tree editable="buttom" multi_edit="1">
-                               <field name="images" widget="image" class="oe_avatar" />
+                                <field name="images" widget="image" class="oe_avatar" />
                             </tree>
                         </field>
                     </page>

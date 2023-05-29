@@ -46,11 +46,11 @@ class WebsiteSale(WebsiteSale):
                     if read_doctors >= 4 :
                         doctors = request.env['res.partner'].sudo().search_read([
                             ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor'), ('premium',  '=', 'True')],
-                                ['id', 'name', 'Rank', 'phone', 'email', 'contact_address', 'image_1920','images_ids', 'website'],limit=4)
+                                ['id', 'name', 'Rank', 'mobile', 'email', 'contact_address', 'image_1920','images_ids', 'website'],limit=4)
                     else:
                         doctors = request.env['res.partner'].sudo().search_read([
                             ('expertIn', 'in', product_cat_id), ('function', '=', 'Doctor')],
-                            ['id', 'name', 'Rank', 'phone', 'email', 'contact_address', 'image_1920', 'images_ids', 'website'], order='premium', limit=4)
+                            ['id', 'name', 'Rank', 'mobile', 'email', 'contact_address', 'image_1920', 'images_ids', 'website'], order='premium', limit=4)
                     for doctor in doctors:
                         if doctor.get('images_ids'):
                             for doctor_image_index in range(len(doctor.get('images_ids'))):
