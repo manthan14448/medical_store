@@ -1,2 +1,2 @@
 # medicalstore
-Odoo project repo
+Odoo project repo for collage
